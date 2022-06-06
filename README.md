@@ -50,19 +50,26 @@ Atom 编辑器也有自己的包管理器。
 ## apt命令简要
 
 apt-get install XXXXX  安装软件包
+
 apt-get remove XXXXX  删除软件包
+
 apt-get remove --purge xxxx 删除软件包（包括配置文件）
 
+
 apt-cache search XXXX 搜索软件包
+
 apt-cache show XXXX 展示软件包信息
 
 ## dpkg命令
 
 apt 与 dpkg 均为 ubuntu 下面的包管理工具。
+
 dpkg 侧重于本地软件的管理,仅用于安装本地的软件包，安装时不会安装依赖包，不解决依赖问题。
+
 apt 基于dpkg，侧重于远程包的下载和依赖管理，相当于 dpkg 的前端,默认会从远程仓库搜索包的名字，下载并安装，安装时会自动安装依赖包，并解决依赖问题。
 
 dpkg -L XXXXXX  查看包的安装路径
+
 dpkg -l XXXXXX  查看包描述信息
 
 
